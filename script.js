@@ -19,9 +19,7 @@ class Messenger {
   }
 
   show_history() {
-    this.messages.forEach((metn) => {
-      console.log(metn.toHtml());
-    });
+    this.messages.shift().toHtml();
   }
 
   send(ad, text) {
